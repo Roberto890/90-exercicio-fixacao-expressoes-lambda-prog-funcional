@@ -21,7 +21,7 @@ public class Program {
         System.out.print("Digite o caminho do arquivo: ");
         String path = sc.nextLine();
 
-        System.out.print("Digite o salario:");
+        System.out.print("Digite o salario: ");
         double salary = sc.nextDouble();
 
         char initialLetter = 'M';
@@ -49,11 +49,11 @@ public class Program {
                                           .reduce(0.0, (x,y) -> x + y);
  
             //printando os resultados
-            System.out.printf("Email dos funcionarios que tem salario maior que %.2f:" , salary);
+            System.out.printf("Email dos funcionarios que tem salario maior que %.2f: " , salary);
             System.out.println();
             emails.forEach(System.out::println);
 
-            System.out.printf("Soma do salario das pessoas que tem a inicial do nome em %s: '%.2f'" ,initialLetter, salarySum);
+            System.out.printf("Soma do salario das pessoas que tem a inicial do nome em '%s': %.2f" ,initialLetter, salarySum);
 
         } catch(IOException e ){
             System.out.println("Error: " + e.getMessage());
